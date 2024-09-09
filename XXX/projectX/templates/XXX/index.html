@@ -8,5 +8,13 @@
     <body>
         <h1>Привет, друг!</h1>
         <img src="static/images/friend.jpg">
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                {{ form }}
+            </table>
+            <input type="submit" value="Отправить" >
+           </form>
     </body>
 </html>
+
